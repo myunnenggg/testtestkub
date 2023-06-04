@@ -1,0 +1,19 @@
+<!--หน้าแยกของแต่ละสินค้า-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  <h1>Product Detail</h1>
+    <h4>
+      <a href="/products/<%=product.ID%>"><%=product.Title%></a> <!--ทำลิ้งแล้วเขียน ejs ให้ลิ้งไปตามค่า id ที่กำหนดใน jsonไฟล์-->
+    </h4>
+    <p>
+      <%=product.Price%>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  <h1>Products</h1>
+  <% products.map((product)=>{ %> <!--รับค่าแล้ววนลูปแสดงคล้ายๆอันที่แล้ว-->
+    <h4>
+      <a href="/products/<%=product.ID%>"><%=product.Title%></a> <!--ทำลิ้งแล้วเขียน ejs ให้ลิ้งไปตามค่า id ที่กำหนดใน jsonไฟล์-->
+    </h4>
+    <p>
+      <%=product.Price%>
+    </p>
+    <%})%>
+      </div>
+      </section>
+
+</body>
+
+</html>
